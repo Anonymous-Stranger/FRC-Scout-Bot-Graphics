@@ -1,0 +1,31 @@
+
+//Page
+$page_background: #070707;
+$page_font-family: "arial", "helvetica", "sans-serif";
+
+//Header
+$header_mainh_background: #FDFDFD;
+$header_nav_background: #121212;
+$header_nav_selected_background: #FDFDFD;
+
+$header_mainh_height: 3.5em;
+$header_nav_height: 3em;
+$header_height: $header_mainh_height+$header_nav_height;
+
+$header_main_logo_height: $header_mainh_height * 2 / 3;
+
+$header_mainh_text_color: #121212;
+$header_nav_text_color: #FDFDFD;
+$header_nav_selected_color: #121212;
+
+$header_nav_font_size: $header_nav_height / 2.5;
+
+$header_navicon_color: #444;
+$header_navicon_hover_color: #00FF00;
+
+//Content
+$content_top_padding: $header_height;
+$content_lr_padding: 2.5%;
+$content_background: #E7E7E7;
+$content_header_text: black;
+$content_sub_text: black;

@@ -1,0 +1,13 @@
+
+@import '../theme';
+
+#page_content{
+	margin-top: $header_mainh_height;
+	padding: 0;
+
+	background: inherit;
+}
+
+#page_nav {
+	display: none;
+}

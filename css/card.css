@@ -1,0 +1,16 @@
+.cards {
+  width: 100%;
+  box-sizing: border-box;
+  display: table; }
+
+.card {
+  height: 20em;
+  width: 100%;
+  display: block;
+  color: #EEE;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2em; }
+  .card > h1 {
+    margin-bottom: 1em; }

@@ -1,0 +1,87 @@
+header#page_header {
+  z-index: 100;
+  height: 6.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box; }
+  header#page_header hgroup#main_heading {
+    position: relative;
+    height: 3.5em;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    box-sizing: border-box;
+    background: #fdfdfd;
+    color: #121212; }
+    header#page_header hgroup#main_heading #robotics_logo,
+    header#page_header hgroup#main_heading #main_logo {
+      display: inline;
+      vertical-align: middle; }
+    header#page_header hgroup#main_heading #robotics_logo {
+      height: 100%;
+      box-sizing: border-box;
+      margin-top: 0.2em;
+      padding-left: 0.3em; }
+    header#page_header hgroup#main_heading #main_logo {
+      height: 2.33333em;
+      margin-top: -0.4em;
+      padding-left: 1em; }
+    header#page_header hgroup#main_heading #page_navicon {
+      height: 3.5em;
+      width: 3.5em;
+      display: inline;
+      float: right;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 3.5em;
+      font-size: 1.4em;
+      box-sizing: border-box; }
+    header#page_header hgroup#main_heading #page_navicon {
+      position: relative;
+      padding-left: 1.25em;
+      background: transparent; }
+      header#page_header hgroup#main_heading #page_navicon:before {
+        content: "";
+        position: absolute;
+        left: 1em;
+        top: 1em;
+        width: 1em;
+        height: 0.15em;
+        background: #444444;
+        box-shadow: 0 0.25em 0 0 #444444, 0 0.5em 0 0 #444444; }
+  header#page_header nav#page_nav > ul {
+    height: 3em;
+    width: 100%;
+    z-index: 90;
+    display: table;
+    table-layout: fixed;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    background: transparent; }
+    header#page_header nav#page_nav > ul a {
+      height: 100%;
+      position: relative;
+      top: -1.5em;
+      display: table-cell;
+      background: #121212;
+      color: #fdfdfd;
+      text-decoration: none;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 1.2em;
+      box-sizing: border-box;
+      border-top-width: 0px;
+      border-radius: 0 0 1px 1px; }
+      header#page_header nav#page_nav > ul a > li {
+        list-style: none; }
+    header#page_header nav#page_nav > ul a:first-of-type {
+      border-left-width: 0; }
+    header#page_header nav#page_nav > ul a:last-of-type {
+      border-right-width: 0; }
+    header#page_header nav#page_nav > ul a[selected] {
+      z-index: 200;
+      background: #fdfdfd;
+      color: #121212;
+      font-weight: bold; }

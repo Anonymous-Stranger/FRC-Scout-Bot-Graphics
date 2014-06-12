@@ -1,0 +1,157 @@
+
+@import 'theme';
+
+header#page_header{
+
+	z-index: 100;
+
+	height: $header_height;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	box-sizing: border-box;
+
+	hgroup#main_heading {
+
+		position: relative;
+		height: $header_mainh_height;
+		left: 0;
+		right: 0;
+		z-index: 200;
+
+		box-sizing: border-box;
+
+		background: $header_mainh_background;
+		color: $header_mainh_text_color;
+
+		//box-shadow: 0 0.3vmin 0.7vmin black;
+
+
+		#robotics_logo,
+		#main_logo {
+			display: inline;
+			vertical-align: middle;
+		}
+
+		#robotics_logo {
+			height: 100%;
+
+			box-sizing: border-box;
+
+			margin-top: 0.2em;
+			padding-left: 0.3em;
+
+		}
+
+		#main_logo {
+			height: $header_main_logo_height;
+
+			margin-top: -0.4em;
+			padding-left: 1em;
+		}
+
+		#page_navicon {
+			height: $header_mainh_height;
+			width: $header_mainh_height;
+
+			display: inline;
+			float: right;
+
+			text-align: center;
+			vertical-align: middle;
+			line-height: $header_mainh_height; 
+
+			//background: red;
+
+			font-size: $header_mainh_height * 2 / 5;
+
+			box-sizing: border-box;
+		}
+
+		#page_navicon {
+			position: relative;
+			padding-left: 1.25em;
+
+			background: transparent;
+
+			&:before {
+				content: "";
+			  	position: absolute;
+			  	left: 1em;
+			  	top: 1em;
+			  	width: 1em;
+			  	height: 0.15em;
+			  	background: $header_navicon_color;
+			  	box-shadow: 
+			    	0 0.25em 0 0 $header_navicon_color,
+			    	0 0.5em 0 0 $header_navicon_color;
+			}
+		}
+
+	}
+
+	nav#page_nav > ul{
+		height: $header_nav_height;
+		width: 100%;
+
+		z-index: 90;
+
+		display: table;
+		table-layout: fixed;
+
+		box-sizing: border-box;
+		border-collapse: collapse;
+
+		background: transparent;
+
+		a {
+			height: 100%;
+
+			position: relative;
+			top: -$header_nav_height / 2;
+
+			display: table-cell;
+
+			background: $header_nav_background;
+			color: $header_nav_text_color;
+
+			text-decoration: none;
+
+			text-align: center;
+			vertical-align: middle;
+
+			font-size: $header_nav_font_size;
+
+			box-sizing: border-box;
+			border-top-width: 0px;
+			border-radius: 0 0 1px 1px;
+			//box-shadow: 0 0.5vmin 0.3vmin 0.1vmin black;
+
+			> li { list-style: none; }
+		}
+
+		a:first-of-type{
+			border-left-width: 0;
+		}
+
+		a:last-of-type{
+			border-right-width: 0;
+		}
+
+		a[selected] { //inverts selected nav item
+			z-index: 200;
+
+			background: $header_nav_selected_background;
+			color: $header_nav_selected_color;
+			font-weight: bold;
+
+			//box-shadow: 0 0.5vmin 0.3vmin 0.1vmin black;
+		}
+
+	}
+
+}
+
